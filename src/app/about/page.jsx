@@ -1,14 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
-import styles from './page.modules.css';
+import styles from './page.module.css';
 import Aboutimage from 'public/hand-holding-phone-mockup.png'
 import Button from '@/components/Button/Button';
 
-const page = () => {
+const About = () => {
   return (
     <div className={styles.container}>
       <div className={styles.imgContainer}>
-      <Image src={Aboutimage} className={styles.img} alt='about' />
+      <Image src='https://images.unsplash.com/photo-1687120484923-542ddb1edb63?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80' className={styles.img} alt='about'
+      fill={true} />
       <div className={styles.imgText}>
     <h1>Digital Solutions</h1>
     <h2>Handcrafting Digital Experience</h2>
@@ -35,4 +36,4 @@ const page = () => {
   )
 }
 
-export default page
+export default About
